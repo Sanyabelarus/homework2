@@ -11,6 +11,13 @@ public class Main {
             number = number / 10;
         }
         s.reverse();
-        System.out.println(s.charAt(0));
+        Character character = s.charAt(0);
+        int rightNumber = Character.getNumericValue(character);
+        System.out.println(rightNumber);
+        if (rightNumber==7){
+            System.out.println("Последняя цифра является 7");
+        }else{
+            System.out.println("Последняя цифра не является 7");
+        }
     }
 }
